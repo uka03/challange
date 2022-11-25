@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container bg-light">
+      <h3 class="text-center">
+        Байгууллагын дотоод үйл ажиллгаанд зориулсан судалгаанд тавтай морил
+      </h3>
+      <main class="">
+        <h5 >Ерөнхий мэдээлэл</h5>
+        <form action="#" class="row row-cols-1 row-cols-md-2 p-2">
+            <div class="col order-0">
+            <label for="lastname"> Овог</label>
+            <input
+              type="text"
+              class="form-control d-block"
+              id="lastname"
+              required
+            />
+        </div>
+        <div class="col order-0 order-md-1">
+            <label for="firstname"> Нэр</label>
+            <input
+              type="text"
+              class="form-control d-block"
+              id="firstname"
+              required
+            />
+        </div>
+        <div class="col order-0 order-md-3">
+            <label for="age"> Нас</label>
+            <input
+              type="number"
+              class="form-control d-block"
+              id="age"
+              required
+            />
+        </div>
+        <div class="col order-1 order-md-0">
+            <label for="province"> Аймаг</label>
+            <select name="province" id="province " class="form-control">
+                <option value="select" selected>Сонгох</option>
+              <option value="ARH">Архангай</option>
+              <option value="BAU">Баян-Өлгий</option>
+              <option value="BAH">Баянхонгор</option>
+              <option value="BUL">Булган</option>
+              <option value="GOA">Говь-Алтай</option>
+              <option value="GOS">Говьсүмбэр</option>
+              <option value="DAU">Дархан-Уул</option>
+              <option value="DOG">Дорноговь</option>
+              <option value="DOR">Дорнод</option>
+              <option value="DUG">Дундговь</option>
+              <option value="ZAW">Завхан</option>
+              <option value="ORH">Орхон</option>
+              <option value="UVH">Өвөрхангай</option>
+              <option value="UMU">Өмнөговь</option>
+              <option value="SUB">Сүхбаатар</option>
+              <option value="SEL">Сэлэнгэ</option>
+              <option value="TUV">Төв</option>
+              <option value="EVS">Увс</option>
+              <option value="HOW">Ховд</option>
+              <option value="HUW">Хөвсгөл</option>
+              <option value="HEN">Хэнтий</option>
+            </select>
+        </div>
+        <div class="col order-1 order-md-2">
+            <label for="country">Хот</label>
+            <select name="country" id="country" class="form-control">
+                <option value="select" selected>Сонгох</option>
+              <option value="ARH">Цэцэрлэг хот</option>
+              <option value="BAU">Өлгий</option>
+              <option value="BAH">Баянхонгор</option>
+              <option value="BUL">Булган</option>
+              <option value="GOA">Алтай</option>
+              <option value="GOS">Чойр</option>
+              <option value="DAU">Дархан</option>
+              <option value="DOG">Сайншанд</option>
+              <option value="DOR">Чойбалсан</option>
+              <option value="DUG">Мандалговь</option>
+              <option value="ZAW">Улиастай</option>
+              <option value="ORH">Эрдэнэт</option>
+              <option value="UVH">Арвайхээр</option>
+              <option value="UMU">Даланзадгад</option>
+              <option value="SUB">Баруун-Урт</option>
+              <option value="SEL">Сүхбаатар</option>
+              <option value="TUV">Зуунтмод</option>
+              <option value="EVS">Улаангом</option>
+              <option value="HOW">Ховд</option>
+              <option value="HUW">Мөрөн</option>
+              <option value="HEN">Чингис</option>
+            </select>
+        </div>
+        <div class="col order-1 order-md-5">
+            <label for="team">Баг</label>
+            <select name="team" id="team" class="form-control" required>
+                <option value="select" selected disabled >Сонгох</option>
+              <option value="1-team">1-баг</option>
+              <option value="2-team">2-баг</option>
+              <option value="3-team">3-баг</option>
+              <option value="4-team">4-баг</option>
+              <option value="5-team">5-баг</option>
+            </select>
+        </div>
+          <div class="col mt-2 order-md-5 order-5">
+          <button href="#" class="btn btn-warning ">Хадгалах</button>
+        </div>
+        </form>
+        <hr>
+        <div class="row gap-3 pe-5">
+            <h5>Хэсэг I</h5>
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col">
+                    <label for="sec-1">Үйл ажиллагаа 1</label>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" id="sec-1">
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col">
+                    <label for="sec-2">Үйл ажиллагаа 2</label>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" id="sec-2">
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col">
+                    <label for="sec-3">Үйл ажиллагаа 3</label>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" id="sec-3" disabled placeholder="Машин">
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col">
+                    <label for="sec-4">Үйл ажиллагаа 4</label>
+                </div>
+                <div class="col">  
+                    <div class="">
+                        <label for=""><input type="radio" class="" id="sec-4" name="sec-4-or" >Тийм
+                        </label>
+                    </div>      
+                    <div class="">
+                        <label for=""><input name="sec-4-or" type="radio" class="" id="sec-4" >Үгүй
+
+                        </label>
+                    </div>      
+                </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </main>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

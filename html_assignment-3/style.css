@@ -1,0 +1,74 @@
+body{
+    background-color: rgba(137, 176, 223) ;
+}
+.container{
+    width: 80%;
+    margin: 50px auto;
+}
+main{
+   display: flex;
+}
+
+.general{
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px 0 0 10px;
+    
+}
+
+.general .title{
+    color: rgb(38, 84, 157);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+ input, select{
+    background: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+    color: grey;
+    
+}
+
+.flex{
+    display: flex;
+    gap: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap: 30px;
+}
+
+.contact{
+    background-color:rgb(58, 58, 193) ;
+    color: white;
+    padding: 50px;
+    border-radius: 0 20px 20px 0;
+}
+
+.contact input::placeholder{
+    color: white;
+}
+.contact section{
+    color: white;
+}
+ .contact input, .contact select {
+    
+    background: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+    color: white;
+}
+
+.btn{
+    color: black;
+    padding: 10px 20px;
+    border-radius: 30px ;
+    margin-top: 50px;
+    font-size: 16px;
+}
