@@ -1,0 +1,57 @@
+.tap-1{
+    width: 100px;
+    height: 100px;
+    background-color:transparent ;
+    border:1px black dotted  ;
+
+}
+
+
+.box-1{
+    width: 0;
+    height: 100px;
+    background-color: blue;
+    transition: all 3s;
+
+}
+.tap-2{
+    width: 100px;
+    height: 100px;
+    background-color:transparent ;
+    border:1px black dotted  ;
+
+}
+
+
+.box-2{
+    width: 0;
+    height: 100px;
+    background-color: green;
+    transition: all 3s;
+
+}
+
+.tap-1:hover .box-1{
+    width: 100vw;
+    transition: all 3s;
+
+}
+.tap-2:hover .box-2{
+    width: 100vw;
+    transition: all 3s;
+
+}
+
+button{
+    border: none;
+    background-color: aqua;
+    padding: 50px;
+    font-size: large;
+    border-radius: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(255, 247, 0);
+    transition: all 5s;
+}

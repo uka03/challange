@@ -1,0 +1,28 @@
+main{
+    width: 600px;
+    background-color: aqua;
+    margin: 100px auto;
+    height: 600px;
+}
+
+.list {
+    list-style: none;
+    padding: 0px;
+}
+
+hr{
+    border: 0.3px black solid;
+    margin: 0;
+}
+
+.list-item{
+    padding: 10px;
+    font-size: 36px;
+}
+
+
+.list-item:hover{
+    font-size: 56px;
+    background-color: coral;
+    transition: all 3s;
+}
