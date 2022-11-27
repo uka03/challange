@@ -1,0 +1,53 @@
+main{
+    border: 1px black solid;
+    width: 500px;
+    height: 500px;
+    margin: 100px auto;
+    
+
+}
+
+
+.boxes{
+    display: flex;
+    width: 210px;
+    height: 210px;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 145px auto;
+    
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 0px 10px black ;
+}
+.cover{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    opacity: 0.3;
+    transition: all 2s;
+}
+
+main:hover .cover-1 {
+    transition: all 2s;
+    opacity: 0.7;
+    transform: translate(-145px, -145px);
+}
+main:hover .cover-2 {
+    transition: all 2s;
+    opacity: 0.7;
+    transform: translate(145px, -145px);
+}
+main:hover .cover-3 {
+    transition: all 2s;
+    opacity: 0.7;
+    transform: translate(-145px, 145px);
+}
+main:hover .cover-4 {
+    transition: all 2s;
+    opacity: 0.7;
+    transform: translate(145px, 145px);
+}
