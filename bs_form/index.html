@@ -17,18 +17,19 @@
         Байгууллагын дотоод үйл ажиллгаанд зориулсан судалгаанд тавтай морил
       </h3>
       <main class="">
-        <h5 >Ерөнхий мэдээлэл</h5>
+        <h5>Ерөнхий мэдээлэл</h5>
         <form action="#" class="row row-cols-1 row-cols-md-2 p-2">
-            <div class="col order-0">
+          <div class="col order-0">
             <label for="lastname"> Овог</label>
             <input
+              class="form-control"
               type="text"
               class="form-control d-block"
               id="lastname"
               required
             />
-        </div>
-        <div class="col order-0 order-md-1">
+          </div>
+          <div class="col order-0 order-md-1">
             <label for="firstname"> Нэр</label>
             <input
               type="text"
@@ -36,8 +37,8 @@
               id="firstname"
               required
             />
-        </div>
-        <div class="col order-0 order-md-3">
+          </div>
+          <div class="col order-0 order-md-3">
             <label for="age"> Нас</label>
             <input
               type="number"
@@ -45,11 +46,11 @@
               id="age"
               required
             />
-        </div>
-        <div class="col order-1 order-md-0">
+          </div>
+          <div class="col order-1 order-md-0">
             <label for="province"> Аймаг</label>
             <select name="province" id="province " class="form-control">
-                <option value="select" selected>Сонгох</option>
+              <option value="select" selected>Сонгох</option>
               <option value="ARH">Архангай</option>
               <option value="BAU">Баян-Өлгий</option>
               <option value="BAH">Баянхонгор</option>
@@ -72,11 +73,11 @@
               <option value="HUW">Хөвсгөл</option>
               <option value="HEN">Хэнтий</option>
             </select>
-        </div>
-        <div class="col order-1 order-md-2">
+          </div>
+          <div class="col order-1 order-md-2">
             <label for="country">Хот</label>
             <select name="country" id="country" class="form-control">
-                <option value="select" selected>Сонгох</option>
+              <option value="select" selected>Сонгох</option>
               <option value="ARH">Цэцэрлэг хот</option>
               <option value="BAU">Өлгий</option>
               <option value="BAH">Баянхонгор</option>
@@ -99,70 +100,258 @@
               <option value="HUW">Мөрөн</option>
               <option value="HEN">Чингис</option>
             </select>
-        </div>
-        <div class="col order-1 order-md-5">
+          </div>
+          <div class="col order-1 order-md-5">
             <label for="team">Баг</label>
             <select name="team" id="team" class="form-control" required>
-                <option value="select" selected disabled >Сонгох</option>
+              <option value="select" selected disabled>Сонгох</option>
               <option value="1-team">1-баг</option>
               <option value="2-team">2-баг</option>
               <option value="3-team">3-баг</option>
               <option value="4-team">4-баг</option>
               <option value="5-team">5-баг</option>
             </select>
-        </div>
+          </div>
           <div class="col mt-2 order-md-5 order-5">
-          <button href="#" class="btn btn-warning ">Хадгалах</button>
-        </div>
+            <button href="#" class="btn btn-warning">Хадгалах</button>
+          </div>
         </form>
-        <hr>
+        <hr />
         <div class="row gap-3 pe-5">
-            <h5>Хэсэг I</h5>
-            <div class="row row-cols-1 row-cols-md-2">
-                <div class="col">
-                    <label for="sec-1">Үйл ажиллагаа 1</label>
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" id="sec-1">
-                </div>
+          <h5>Хэсэг I</h5>
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <label for="sec-1">Үйл ажиллагаа 1</label>
             </div>
-            <div class="row row-cols-1 row-cols-md-2">
-                <div class="col">
-                    <label for="sec-2">Үйл ажиллагаа 2</label>
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" id="sec-2">
-                </div>
+            <div class="col">
+              <input type="text" class="form-control" id="sec-1" required />
             </div>
-            <div class="row row-cols-1 row-cols-md-2">
-                <div class="col">
-                    <label for="sec-3">Үйл ажиллагаа 3</label>
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" id="sec-3" disabled placeholder="Машин">
-                </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <label for="sec-2">Үйл ажиллагаа 2</label>
             </div>
-            <div class="row row-cols-1 row-cols-md-2">
-                <div class="col">
-                    <label for="sec-4">Үйл ажиллагаа 4</label>
-                </div>
-                <div class="col">  
-                    <div class="">
-                        <label for=""><input type="radio" class="" id="sec-4" name="sec-4-or" >Тийм
-                        </label>
-                    </div>      
-                    <div class="">
-                        <label for=""><input name="sec-4-or" type="radio" class="" id="sec-4" >Үгүй
-
-                        </label>
-                    </div>      
-                </div>
-                </div>
+            <div class="col">
+              <input type="text" class="form-control" id="sec-2" required />
             </div>
-            
+          </div>
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <label for="sec-3">Үйл ажиллагаа 3</label>
+            </div>
+            <div class="col">
+              <input
+                type="text"
+                class="form-control"
+                id="sec-3"
+                disabled
+                placeholder="Машин"
+              />
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <label for="sec-4">Үйл ажиллагаа 4</label>
+            </div>
+            <div class="col">
+              <div class="">
+                <label for=""
+                  ><input
+                    type="radio"
+                    class=""
+                    id="sec-4"
+                    name="sec-4-or"
+                  />Тийм
+                </label>
+              </div>
+              <div class="">
+                <label for=""
+                  ><input
+                    name="sec-4-or"
+                    type="radio"
+                    class=""
+                    id="sec-4"
+                  />Үгүй
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <label for=""> Үйл ажиллагаа 5 </label>
+            </div>
+            <div class="col">
+              <label for="" class="d-block">
+                <input type="checkbox" name="" id="" /> Шинэ жил
+              </label>
+              <label for="" class="d-block">
+                <input type="checkbox" name="" id="" /> Цагаан сар
+              </label>
+              <label for="" class="d-block">
+                <input type="checkbox" name="" id="" /> Наадам
+              </label>
+              <label for="" class="d-block">
+                <input type="checkbox" name="" id="" /> Хүүхдийн баяр
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button href="" class="btn btn-secondary">Хадгалах</button>
+            </div>
+          </div>
         </div>
-
-    </main>
+        <hr />
+        <div class="row">
+          <h5>Хэсэг II</h5>
+          <div class="row row-cols-1 row-cols-md-2 g-2 px-3">
+            <div class="col">
+              <input class="form-control" type="text" placeholder="name" />
+            </div>
+            <div class="col">
+              <input class="form-control" type="text" placeholder="firstname" />
+            </div>
+            <div class="col">
+              <select name="" id="" class="form-control">
+                <option value="male">man</option>
+                <option value="woman">woman</option>
+                <option value="other">other</option>
+              </select>
+            </div>
+            <div class="col">
+              <input class="form-control" type="number" placeholder="age" />
+            </div>
+          </div>
+          <div class="row p-3">
+            <div class="col-7">
+              <input class="form-control" type="text" placeholder="City" />
+            </div>
+            <div class="col">
+              <input
+                class="form-control"
+                type="text"
+                name="state"
+                id="state"
+                placeholder="state"
+              />
+            </div>
+            <div class="col">
+              <input class="form-control" type="number" placeholder="Zip" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button class="btn btn-primary">Хадгалах</button>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <h5>Хэсэг III</h5>
+          <div class="col p-4">
+            <div class="row  d-block d-md-flex">
+              <div class="col">
+                <p>Ногоо</p>
+              </div>
+              <div class="col">
+                <p>Сүүлийн 12 ёард та [НЭР ТӨРӨЛ] ургац хураан авсан уу?</p>
+              </div>
+              <div class="col">
+                <p>Өрхийн хэрэгцээнд хэрэглэсэн (D01)</p>
+              </div>
+              <div class="col">
+                <p>Малын тужуулд зориулсан (D02)</p>
+              </div>
+              <div class="col">
+                <p>Худалдсан (D03)</p>
+              </div>
+            </div>
+            <div class="row g-2  d-block d-md-flex ">
+              <div class="col">
+                <p>Төмс</p>
+              </div>
+              <div class="col">
+                <label for="">
+                  <input type="radio" name="no_or_yes-1" id="no_or_yes-1"><span>
+                    Тийм
+                  </span>
+                </label>
+                <label for="">
+                  <input type="radio" name="no_or_yes-1" id="no_or_yes-1"><span>
+                    Үгүй
+                  </span>
+                </label>
+              </div>
+              <div class="col">
+                <input type="text" name="d01" id="d01" placeholder="d01" class="form-control">
+              </div>
+              <div class="col">
+                <input type="text" name="d02" id="d02" placeholder="d02" class="form-control">
+              </div>
+              <div class="col">
+                <input type="text" name="d03" id="d03" placeholder="D03" class="form-control">
+              </div>
+            </div>
+            <div class="row g-2 d-block d-md-flex">
+              <div class="col">
+                <p>Байцаа</p>
+              </div>
+              <div class="col">
+                <label for="">
+                  <input type="radio" name="no_or_yes-2" id="no_or_yes-2"><span>
+                    Тийм
+                  </span>
+                </label>
+                <label for="">
+                  <input type="radio" name="no_or_yes-2" id="no_or_yes-2"><span>
+                    Үгүй
+                  </span>
+                </label>
+              </div>
+              <div class="col">
+                <input type="text" name="d01" id="d01" placeholder="d01" class="form-control">
+              </div>
+              <div class="col">
+                <input type="text" name="d02" id="d02" placeholder="d02" class="form-control">
+              </div>
+              <div class="col">
+                <input type="text" name="d03" id="d03" placeholder="D03" class="form-control">
+              </div>
+            </div>
+            <div class="row g-2 d-block d-md-flex">
+              <div class="col">
+                <p>Лууван</p>
+              </div>
+              <div class="col">
+                <label for="">
+                  <input type="radio" name="no_or_yes-3" id="no_or_yes-3"><span>
+                    Тийм
+                  </span>
+                </label>
+                <label for="">
+                  <input type="radio" name="no_or_yes-3" id="no_or_yes-3"><span>
+                    Үгүй
+                  </span>
+                </label>
+              </div>
+              <div class="col">
+                <input type="text" name="d01" id="d01" placeholder="d01" class="form-control">
+              </div>
+              <div class="col">
+                <input type="text" name="d02" id="d02" placeholder="d02" class="form-control">
+              </div>
+              <div class="col">
+                <input type="text" name="d03" id="d03" placeholder="D03" class="form-control">
+              </div>
+            </div>
+            <div class="row g-2">
+              <div class="col">
+                <button class="btn btn-success">Хадгалах</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
