@@ -39,6 +39,9 @@ img{
     font-size: 36px;
     text-align: center;
     color: white;
+    transition-property: font-size ;
+    transition-duration: 1s;
+    transition-delay: 0.3;
 
 }
 
