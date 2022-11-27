@@ -1,0 +1,37 @@
+.text {
+    background-color: grey;
+    color: white;
+    position: relative;
+    width: 200px;
+    padding: 20px;
+    font-size: 36px;
+    border-radius: 20px;
+    margin: 200px auto;
+    text-align: center;
+    transition: all 1s;
+
+
+}
+
+.badge{
+    position: absolute;
+    background-color: red;
+    padding: 5px 15px;
+    border-radius: 30px;
+    top: -25px;
+    right: -25px;
+    transition: all 1s;
+
+}
+
+
+.text:hover{
+    background-color: red;
+    transition: all 1s;
+}
+
+.text:hover .badge{
+    z-index: -1;
+    transform: translate(-150px, 35px);
+    transition: all 1s;
+}
