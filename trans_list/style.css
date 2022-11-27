@@ -18,6 +18,8 @@ hr{
 .list-item{
     padding: 10px;
     font-size: 36px;
+    transition: all 3s;
+
 }
 
 
