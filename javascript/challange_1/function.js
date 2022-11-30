@@ -53,10 +53,57 @@ if (urjiwer >= 1) {
   console.log(urjiwer + " ni surug too baina");
 }
 
-//task4 yereg durug shalgah
+//task4 negative positive shalgah
 
 let too = -20;
 
 too >= 1 ? console.log("positive") : console.log("negative");
 
 //task5
+
+let height = 172;
+let weight = 95;
+let Hmeter = height / 100;
+let BoMaIn = weight / (Hmeter * Hmeter);
+
+if (BoMaIn < 18.5) {
+  console.log("ta jingiin dutagdaltai");
+} else if (BoMaIn < 25.0) {
+  console.log("ta eruul jintei");
+} else if (BoMaIn < 30.0) {
+  console.log("Илүүдэл жинтэй");
+} else {
+  console.log("Хэт таргаллалттай");
+}
+
+//task6
+let num = 20;
+
+num >= 1 ? console.log("Эерэг") : console.log("Сөрөг");
+
+//task7
+let number = 31;
+
+number % 2 === 0
+  ? console.log("тэгш тоо байна")
+  : console.log("Сөрөг тоо байна");
+
+//task8
+
+let yearOfBirth = 1996;
+let old = 2022 - yearOfBirth;
+if (old >= 0 && old <= 1) {
+  console.log("Infant");
+} else if (old <= 3) {
+  console.log("Toddler");
+} else if (old <= 5) {
+  console.log("Preschool");
+} else if (old <= 12) {
+  console.log("Gradeschooler");
+} else if (old <= 18) {
+  console.log("Teen");
+} else if (old <= 21) {
+  console.log("Young adult");
+} else {
+  console.log("Adult");
+}
