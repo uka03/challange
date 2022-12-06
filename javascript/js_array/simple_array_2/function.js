@@ -23,15 +23,16 @@ let out = "";
 let centerCompany = itCompanies[Math.floor(itCompanies.length / 2)];
 console.log(centerCompany);
 
-for (
-  let i = Math.floor(itCompanies.length / 2) - 1,
-    j = Math.floor(itCompanies.length / 2) + 1;
-  i > 0;
-  i++
-) {
+output = "";
+for (let i = 1; i < itCompanies.length; i++) {
   output = output + itCompanies[i] + " ";
-  out = out + itCompanies[j] + " ";
-  j++;
 }
 
-console.log(output + out);
+console.log(output);
+
+output = "";
+for (let i = 0; i < itCompanies.length - 1; i++) {
+  output = output + itCompanies[i] + " ";
+}
+
+console.log(output);
