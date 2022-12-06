@@ -39,7 +39,7 @@ while (number > 0) {
 }
 console.log(output);
 
-//task5 n hurtleh toog hewleh niilberiig oloh
+//task5 n hurtleh toog hewleh niildberiig oloh
 
 number = parseFloat(prompt("toogoo oruulna uu"));
 output = "";
