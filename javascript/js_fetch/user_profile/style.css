@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0%;
+  background-color: rgb(142, 142, 142);
+}
+
+.profile {
+  width: 400px;
+  height: 550px;
+  margin: 120px auto;
+}
+.top {
+  height: 50%;
+  width: 100%;
+  background-color: blue;
+  border-radius: 50px 50px 0 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 140px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  gap: 20px;
+}
+.bottom {
+  height: 50%;
+  width: 100%;
+  background-color: white;
+  border-radius: 0px 0px 50px 50px;
+}
+
+.proImg {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 10px;
+  top: -15%;
+  left: 30%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+}
+.picture {
+  border-radius: 50%;
+}
