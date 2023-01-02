@@ -1,7 +1,7 @@
 const express = require("express");
-const cors = require('cors');
-const bodyParser = require("body-parser")
-const jsonParser = bodyParser.json();
+const cors = require("cors");
+const bodyParser = require("body-parser");
+let jsonParser = bodyParser.json();
 let users = [
   {
     id: 0,
@@ -83,18 +83,18 @@ let users = [
     balance: 1900000,
     balance_type: false,
   },
-
 ];
 let index = users.length;
 
 const app = express();
 app.use(cors());
+app.use(express.json());
 
 app.get("/api/users", (req, res) => {
   res.send(users);
 });
 
-app.get("/api/users/:id", (req, res) => {
+app.get("/api/users/:id", jsonParser, (req, res) => {
   const car = users.filter((c) => c.id === Number(req.params.id));
   if (car.length > 0) {
     res.send(car[0]);
@@ -108,6 +108,10 @@ app.post("/api/users", jsonParser, (req, res) => {
   index++;
   users.push(car);
   res.send(car);
+});
+
+app.put("/api/users", jsonParser, (req, res) => {
+  console.log(req.body);
 });
 
 app.delete("/api/users", jsonParser, (req, res) => {
